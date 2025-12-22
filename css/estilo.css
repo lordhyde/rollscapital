@@ -1,0 +1,368 @@
+body{
+	font-family:"myriad pro","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1,h2,h3{
+	font-family: 'Quicksand','Alegreya Sans', sans-serif;
+	color:#814b00;
+}
+h1.extraspace{
+	margin:50px auto 30px;
+}
+#header{
+	background: #fff url('../img/bg-top.jpg') center top repeat-x;
+	height:330px;
+}
+#toptext{
+	color:#ccc;
+	height:70px;
+}
+#toptext span{
+	display:inline-block;
+	margin-top:16px;
+	margin-left:10px;
+	font-size:13px;
+}
+#header a.logo{
+	margin-top: 6px;
+    display: block;
+}
+#header ul{
+	display:block;
+	list-style:none;
+	margin-top:128px;
+}
+#header ul li{
+	display:inline-block;
+	border-right:1px solid #530006;
+	padding-right:4px;
+}
+#header ul li:last-child{
+	border-right:0;
+}
+#header ul li a{
+	display:block;
+	width:100%;
+	height:100%;
+	padding:15px 16px 16px;
+	color:#530006;
+}
+#header ul li a:hover,#header ul li a.active{
+	background: rgba(161,92,4,.5);
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+	min-width: 100%;
+}
+
+.container p{
+	font-size:18px;
+	color:#3f0006;
+}
+
+.bottomimage{
+	position: relative;
+	height:100%;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	padding-top:90px;
+	margin-top:90px;
+}
+.bottomimage .container{
+	position: absolute;
+	margin:auto;
+	left:0;
+	right:0;
+	background: #fff url("img/bottombar.jpg") bottom center repeat-x;
+	margin-top:-90px;
+	text-align: left;
+	padding: 0 90px 50px;
+}
+.bottomimage .container h1{
+	font-size:48px;
+	margin-bottom: 16px;
+}
+.bottomimage img,.topimage img{
+	width: 100%;
+}
+.readmore {
+    margin-top: 20px;
+}
+.readmore a{
+	background: #6a0006;
+	color:#fff;
+	padding:14px 11px;
+}
+.readmore a:hover{
+	text-decoration:none;
+	color:#e5c146;
+}
+.second-row{
+	margin-top:90px;
+}
+#footer{
+	clear:both;
+	margin-top:90px;
+	background: #d7a115 url('../img/goldbar.png') center top repeat-x;
+	font-size:18px;
+	padding:40px 0 30px;
+	color:#530006;
+}
+.topimage .container {
+	margin-top:-90px;
+	background:#fff;
+	z-index:10;
+	max-width: 66.666%
+}
+.contactform{
+	margin-top:70px;
+}
+form{
+	background:#e7dccd;
+	padding:40px 0;
+}
+input,textarea, select{
+	width:100%;
+	background:#f5f1eb;
+	height:40px;
+	font-size:20px;
+	color:#3f0006;
+	border:0;
+	padding:10px;
+}
+textarea{
+	height:90px;
+}
+form .row{
+	margin-bottom:25px;
+}
+#submit{
+	cursor:pointer;
+}
+
+.bottomimage .container:first-child{
+	background: #fff url('../img/goldbarsm2.jpg') center bottom repeat-x;
+}
+
+.topimage .topblock {
+    background: #fff url('../img/goldbarsm2.jpg') center top repeat-x;
+    position: relative;
+    padding: 20px 40px;
+}
+#goldbar {
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    z-index: 0;
+    display: block;
+    background: transparent url('../img/goldbarsm.png')center center repeat-x;
+    top: 44px;
+}
+p.nota{
+	font-size:10px;
+}
+.container.small{
+	max-width: 600px;
+	margin-top:50px;
+}
+.container.small p{
+	margin-bottom:30px;
+}
+.clocks {
+    max-width: 800px;
+    margin: auto;
+}
+
+#overlayLogin {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+#loginPopup {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    padding: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+#loginPopup form{
+	padding: 10px;
+	border-top: 10px solid #d7a115;
+}
+
+#loginPopup form label{
+	color: #000;
+}
+
+#loginPopup form button{
+	border-radius: 10px;
+	display: block;
+	font-size: 16px;
+	padding: 5px 0;
+    background: #d7a115;
+    color: #fff;
+    width: 100%;
+}
+
+#loginPopup form input{
+	border-radius: 10px;
+	font-size: 16px;
+}
+
+#loginPopup #closePopup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+	color: #000;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+#loginPopup #errorMessage {
+	background: #3f0006;
+    margin: 0;
+    padding: 10px;
+	color:#d7a115;
+	text-align:center;
+}
+
+#toptext span a{
+	color: #ccc;
+}
+
+.downloadbutton{
+	text-align: center;
+}
+.downloadbutton img{
+	width:250px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Reset default table styles */
+.adminTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.adminTable, .adminTable th, .adminTable td {
+    border: 1px solid #ddd;
+}
+
+/* Table header style */
+.adminTable th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Table data (cell) style */
+.adminTable td {
+    padding: 8px;
+}
+
+/* Odd rows background color */
+.adminTable tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect on table rows */
+.adminTable tr:hover {
+    background-color: #e5e5e5;
+}
+
+#addUserContent input, #addUserContent select, #addUserContent button, #uploadFileContent button{
+	display: block;
+	margin: 15px 0;
+	width: 100%;
+}
+
+#addUserContent button, #uploadFileContent button{
+	color:#f5f1eb;
+	height:40px;
+	font-size:20px;
+	background:#3f0006;
+}
+
+#uploadFileContent input{
+	padding:0;
+}
+
+#dashboard-red-divider{
+	background:#530006;
+	display: block;
+	height:40px;
+	width: 100%;
+}
+#dashboard-gold-divider {
+	background: transparent url('../img/goldbarsm.png')center center repeat-x;
+    height: 26px;
+}
+
+#dashboard-gray-row {
+	background:#aaa;
+	display: flex;
+    align-items: center;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+#dashboard-gold-divider span, #dashboard-gray-row span {
+	width: 110px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #fff;
+    height: 20px;
+    text-align: center;
+}
+
+#dashboard-gold-divider span:last-child, #dashboard-gray-row span:last-child{
+	width: 170px;
+}
+
+#dashboard-gray-row span:last-child{
+	height:30px;
+}
+
+.dashboard-container p {
+	font-size: 16px;
+}
