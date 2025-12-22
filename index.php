@@ -59,7 +59,9 @@ require_once('header.php') ?>
 			<div class="row second-row">
 				<div class="col-sm-7">
 					<div class="row">
-						<iframe width="97%" height="300" src="https://www.youtube.com/embed/DyZwBgns4zA" frameborder="0" allowfullscreen></iframe>
+						<div class="responsive-video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 15px;">
+							<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/DyZwBgns4zA" frameborder="0" allowfullscreen></iframe>
+						</div>
 						<p class="nota">This "SKY NEWS" broadcast is an educational and informational service. Rolls Capital Advisors LTD has no relation to "SKY NEWS" or any of "their companies". This video is shown for educational and informative purposes only for people who visit our website. We will update it regularly with different broadcasts to help our clients have access to financial and global news.</p>
 					</div>
 					<div class="row">

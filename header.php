@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>.: Rolls Capital Advisors<?php if($title !== ''){echo " - ".$title;}?> :.</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -59,7 +60,10 @@
 					<a href="/" class="logo"><img src="img/logo.jpg"></a>
 				</div>
 				<div class="col-sm-8 text-end">
-					<ul>
+					<button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+						<i class="fa fa-bars"></i>
+					</button>
+					<ul id="mainNav">
 						<li><a <?php if($page==="index") { ?>class="active"<?php } ?> href="/">Home</a></li>
 						<li><a <?php if($page==="about") { ?>class="active"<?php } ?> href="about">About Us</a></li>
 						<li><a <?php if($page==="products") { ?>class="active"<?php } ?> href="products">Products & Services</a></li>

@@ -59,6 +59,7 @@ require_once('header.php') ?>
                                     <span id="closeOverlayButton" class="close-button"">&times;</span>
                                     <div id="listUsersContent">
                                         <h2>List Users</h2>
+                                        <div style="overflow-x: auto;">
                                         <table class="adminTable">
                                             <tr>
                                                 
@@ -85,6 +86,7 @@ require_once('header.php') ?>
                                             }
                                             ?>
                                         </table>
+                                        </div>
                                     </div>
                                     <div id="addUserContent">
                                         <h2>Add User</h2>
@@ -101,6 +103,7 @@ require_once('header.php') ?>
                                     </div>
                                     <div id="listFilesContent">
                                         <h2>List Files</h2>
+                                        <div style="overflow-x: auto;">
                                         <table class="adminTable">
                                             <tr>
                                                 <th>User</th>
@@ -126,6 +129,7 @@ require_once('header.php') ?>
                                             }
                                             ?>
                                         </table>
+                                        </div>
                                     </div>
                                     <div id="uploadFileContent">
                                         <h2>Upload File</h2>

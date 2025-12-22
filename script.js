@@ -1,5 +1,29 @@
 
 $(document).ready(function() {
+    // Mobile menu toggle
+    $("#mobileMenuToggle").click(function() {
+        $("#mainNav").toggleClass("active");
+        $(this).find("i").toggleClass("fa-bars fa-times");
+    });
+
+    // Close mobile menu when clicking a link
+    $("#mainNav a").click(function() {
+        if ($(window).width() <= 991) {
+            $("#mainNav").removeClass("active");
+            $("#mobileMenuToggle").find("i").removeClass("fa-times").addClass("fa-bars");
+        }
+    });
+
+    // Close mobile menu when clicking outside
+    $(document).click(function(event) {
+        if (!$(event.target).closest('#mainNav, #mobileMenuToggle').length) {
+            if ($("#mainNav").hasClass("active")) {
+                $("#mainNav").removeClass("active");
+                $("#mobileMenuToggle").find("i").removeClass("fa-times").addClass("fa-bars");
+            }
+        }
+    });
+
     $("#loginButton").click(() => {
         // Show the login form as a popup
         $("#overlayLogin").show();

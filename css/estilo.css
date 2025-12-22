@@ -366,3 +366,368 @@ p.nota{
 .dashboard-container p {
 	font-size: 16px;
 }
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES
+   ============================================ */
+
+/* Mobile Navigation Toggle Button */
+.mobile-menu-toggle {
+	display: none;
+	background: transparent;
+	border: 2px solid #530006;
+	color: #530006;
+	font-size: 24px;
+	padding: 8px 15px;
+	cursor: pointer;
+	position: absolute;
+	right: 15px;
+	top: 80px;
+	z-index: 100;
+}
+
+/* Tablet and smaller devices */
+@media (max-width: 991px) {
+	/* Header adjustments */
+	#header {
+		height: auto;
+		min-height: 200px;
+		padding-bottom: 20px;
+	}
+
+	#header ul {
+		margin-top: 20px;
+	}
+
+	#header ul li {
+		display: block;
+		border-right: 0;
+		border-bottom: 1px solid #530006;
+		padding-right: 0;
+	}
+
+	#header ul li:last-child {
+		border-bottom: 0;
+	}
+
+	#header ul li a {
+		padding: 12px 20px;
+	}
+
+	/* Show mobile menu toggle */
+	.mobile-menu-toggle {
+		display: block;
+	}
+
+	/* Hide navigation by default on mobile */
+	#header .col-sm-8 ul {
+		display: none;
+		position: absolute;
+		background: #fff;
+		width: 100%;
+		left: 0;
+		top: 100%;
+		box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+		z-index: 99;
+	}
+
+	/* Show navigation when active */
+	#header .col-sm-8 ul.active {
+		display: block;
+	}
+
+	/* Container adjustments */
+	.bottomimage .container {
+		padding: 0 30px 30px;
+		margin-top: -50px;
+	}
+
+	.topimage .container {
+		max-width: 90%;
+		margin-top: -50px;
+	}
+
+	/* Two-column layouts to single column */
+	.second-row .col-sm-7,
+	.second-row .col-sm-5 {
+		margin-bottom: 30px;
+	}
+
+	/* Responsive iframes container */
+	.responsive-iframe-container {
+		position: relative;
+		overflow: hidden;
+		padding-top: 100%;
+		margin-bottom: 20px;
+	}
+
+	.responsive-iframe-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/* Mobile phones */
+@media (max-width: 767px) {
+	/* Header */
+	#header {
+		min-height: 180px;
+	}
+
+	#toptext {
+		font-size: 11px;
+		height: 60px;
+	}
+
+	#toptext span {
+		display: block;
+		margin-top: 8px;
+		font-size: 11px;
+	}
+
+	#header a.logo img {
+		max-width: 200px;
+		height: auto;
+	}
+
+	#goldbar {
+		top: 35px;
+	}
+
+	.mobile-menu-toggle {
+		top: 60px;
+		right: 10px;
+		font-size: 20px;
+		padding: 6px 12px;
+	}
+
+	/* Typography */
+	h1 {
+		font-size: 28px !important;
+	}
+
+	h2 {
+		font-size: 22px;
+	}
+
+	.container p {
+		font-size: 16px;
+	}
+
+	.bottomimage .container h1 {
+		font-size: 32px;
+	}
+
+	/* Spacing */
+	.bottomimage {
+		padding-top: 40px;
+		margin-top: 40px;
+	}
+
+	.bottomimage .container {
+		padding: 0 20px 30px;
+		margin-top: -40px;
+	}
+
+	.second-row {
+		margin-top: 40px;
+	}
+
+	.topimage .topblock {
+		padding: 15px 20px;
+	}
+
+	.topimage .container {
+		max-width: 95%;
+		margin-top: -40px;
+	}
+
+	/* Forms - larger touch targets */
+	input, textarea, select {
+		height: 48px;
+		font-size: 16px;
+		padding: 12px;
+	}
+
+	textarea {
+		height: 120px;
+	}
+
+	form {
+		padding: 30px 15px;
+	}
+
+	button, input[type="submit"] {
+		height: 48px;
+		font-size: 18px;
+		padding: 12px;
+		cursor: pointer;
+	}
+
+	/* Login popup */
+	#loginPopup {
+		width: 90%;
+		max-width: 400px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#loginPopup form {
+		padding: 20px;
+	}
+
+	#loginPopup form input {
+		font-size: 16px;
+		height: 48px;
+	}
+
+	#loginPopup form button {
+		height: 48px;
+		font-size: 18px;
+	}
+
+	/* Overlay content */
+	.overlay-content {
+		width: 90%;
+		max-width: 500px;
+		padding: 20px;
+	}
+
+	/* Tables - horizontal scroll */
+	.adminTable {
+		display: block;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+
+	/* Dashboard adjustments */
+	#dashboard-gray-row {
+		flex-wrap: wrap;
+		height: auto;
+		padding: 10px 0;
+	}
+
+	#dashboard-gold-divider span,
+	#dashboard-gray-row span {
+		width: 90px;
+		font-size: 14px;
+		margin: 5px 2px;
+	}
+
+	#dashboard-gold-divider span:last-child,
+	#dashboard-gray-row span:last-child {
+		width: 140px;
+	}
+
+	/* Hide market data widgets on mobile (too wide) */
+	.col-md-6 iframe[src*="investing.com"],
+	.col-md-6 iframe[src*="eqrates.investing.com"] {
+		display: none;
+	}
+
+	.col-md-6::after {
+		content: "Market data widgets are not available on mobile. Please view on desktop.";
+		display: block;
+		padding: 20px;
+		background: #f5f1eb;
+		color: #3f0006;
+		text-align: center;
+		font-size: 14px;
+		border-radius: 5px;
+	}
+
+	/* Currency converter table */
+	.converter table {
+		font-size: 12px !important;
+	}
+
+	.converter select {
+		font-size: 12px;
+		height: 80px;
+	}
+
+	.converter input[type="text"] {
+		font-size: 14px;
+	}
+
+	/* Clocks */
+	.clocks {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.clocks > div {
+		margin: 10px;
+	}
+
+	/* Footer */
+	#footer {
+		margin-top: 40px;
+		padding: 30px 15px 20px;
+		font-size: 16px;
+	}
+
+	/* Read more buttons */
+	.readmore a {
+		padding: 12px 16px;
+		display: inline-block;
+		font-size: 16px;
+	}
+
+	/* Download button */
+	.downloadbutton img {
+		width: 180px;
+	}
+
+	/* Contact form specific */
+	.contactform {
+		margin-top: 40px;
+	}
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+	#header a.logo img {
+		max-width: 160px;
+	}
+
+	h1 {
+		font-size: 24px !important;
+	}
+
+	.bottomimage .container h1 {
+		font-size: 26px;
+	}
+
+	.container p {
+		font-size: 15px;
+	}
+
+	/* Stack currency converter vertically */
+	.converter .tbl_sub td {
+		display: block;
+		width: 100% !important;
+		text-align: center;
+	}
+
+	.converter select {
+		width: 100%;
+		height: 120px;
+	}
+
+	#dashboard-gold-divider span,
+	#dashboard-gray-row span {
+		width: 70px;
+		font-size: 12px;
+	}
+
+	#dashboard-gold-divider span:last-child,
+	#dashboard-gray-row span:last-child {
+		width: 110px;
+	}
+}
