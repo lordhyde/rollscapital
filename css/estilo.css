@@ -49,8 +49,10 @@ h1.extraspace{
 #header ul li a:hover,#header ul li a.active{
 	background: rgba(161,92,4,.5);
 }
-.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
-	min-width: 100%;
+.carousel-inner>.carousel-item>a>img, .carousel-inner>.carousel-item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
 }
 
 .container p{
@@ -374,16 +376,27 @@ p.nota{
 /* Mobile Navigation Toggle Button */
 .mobile-menu-toggle {
 	display: none;
-	background: transparent;
+	background: #fff;
 	border: 2px solid #530006;
 	color: #530006;
 	font-size: 24px;
 	padding: 8px 15px;
 	cursor: pointer;
-	position: absolute;
-	right: 15px;
-	top: 80px;
+	position: relative;
+	float: right;
+	margin-top: 20px;
 	z-index: 100;
+}
+
+/* Desktop - hide hamburger and ensure menu is visible */
+@media (min-width: 992px) {
+	.mobile-menu-toggle {
+		display: none !important;
+	}
+
+	#header .col-sm-8 ul {
+		display: block !important;
+	}
 }
 
 /* Tablet and smaller devices */
@@ -422,18 +435,19 @@ p.nota{
 	/* Hide navigation by default on mobile */
 	#header .col-sm-8 ul {
 		display: none;
-		position: absolute;
+		position: relative;
 		background: #fff;
 		width: 100%;
-		left: 0;
-		top: 100%;
+		clear: both;
+		margin-top: 10px;
 		box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 		z-index: 99;
+		padding: 0;
 	}
 
 	/* Show navigation when active */
 	#header .col-sm-8 ul.active {
-		display: block;
+		display: block !important;
 	}
 
 	/* Container adjustments */
@@ -472,6 +486,15 @@ p.nota{
 
 /* Mobile phones */
 @media (max-width: 767px) {
+	/* Carousel/Slider */
+	.carousel-inner>.carousel-item>img {
+		width: 100%;
+		height: auto;
+		min-height: 200px;
+		object-fit: contain;
+		object-position: center;
+	}
+
 	/* Header */
 	#header {
 		min-height: 180px;
@@ -495,13 +518,6 @@ p.nota{
 
 	#goldbar {
 		top: 35px;
-	}
-
-	.mobile-menu-toggle {
-		top: 60px;
-		right: 10px;
-		font-size: 20px;
-		padding: 6px 12px;
 	}
 
 	/* Typography */

@@ -6,40 +6,40 @@ require_once('header.php') ?>
 	<div class="row-fluid" id="slider">
 		<!-- Carousel
 		================================================== -->
-		<div id="homeSlider" class="carousel slide" data-ride="carousel">
+		<div id="homeSlider" class="carousel slide" data-bs-ride="carousel">
 			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#homeSlider" data-slide-to="0" class="active"></li>
-				<li data-target="#homeSlider" data-slide-to="1"></li>
-				<li data-target="#homeSlider" data-slide-to="2"></li>
-				<li data-target="#homeSlider" data-slide-to="3"></li>
-				<li data-target="#homeSlider" data-slide-to="4"></li>
-			</ol>
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<img class="first-slide" src="img/home1.jpg" alt="First slide">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#homeSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#homeSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#homeSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#homeSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				<button type="button" data-bs-target="#homeSlider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="img/home1.jpg" alt="First slide">
 				</div>
-				<div class="item">
-					<img class="second-slide" src="img/home2.jpg" alt="Second slide">
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/home2.jpg" alt="Second slide">
 				</div>
-				<div class="item">
-					<img class="third-slide" src="img/home3.jpg" alt="Third slide">
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/home3.jpg" alt="Third slide">
 				</div>
-				<div class="item">
-					<img class="third-slide" src="img/home4.jpg" alt="Third slide">
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/home4.jpg" alt="Fourth slide">
 				</div>
-				<div class="item">
-					<img class="third-slide" src="img/home5.jpg" alt="Third slide">
+				<div class="carousel-item">
+					<img class="d-block w-100" src="img/home5.jpg" alt="Fifth slide">
 				</div>
 			</div>
-			<a class="left carousel-control" href="#homeSlider" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Anterior</span>
-			</a>
-			<a class="right carousel-control" href="#homeSlider" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Siguiente</span>
-			</a>
+			<button class="carousel-control-prev" type="button" data-bs-target="#homeSlider" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#homeSlider" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
 		</div><!-- /.carousel -->
 	</div>
 	<div class="row-fluid" id="maincontent">
