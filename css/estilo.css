@@ -502,13 +502,40 @@ p.nota{
 
 	#toptext {
 		font-size: 11px;
-		height: 60px;
+		height: auto;
+		min-height: 60px;
+		padding: 5px 10px;
 	}
 
 	#toptext span {
-		display: block;
-		margin-top: 8px;
+		display: inline-block;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		margin-left: 3px;
+		margin-right: 3px;
+		font-size: 10px;
+		white-space: nowrap;
+	}
+
+	#toptext span#loginButton {
+		display: inline-block !important;
+		background: #530006;
+		color: #fff !important;
+		padding: 6px 12px;
+		border-radius: 3px;
+		cursor: pointer;
 		font-size: 11px;
+		font-weight: bold;
+		border: 1px solid #d7a115;
+	}
+
+	#toptext span#loginButton:hover {
+		background: #6a0006;
+	}
+
+	#toptext span a {
+		color: #ccc;
+		text-decoration: none;
 	}
 
 	#header a.logo img {
@@ -708,6 +735,23 @@ p.nota{
 
 /* Very small phones */
 @media (max-width: 480px) {
+	#toptext {
+		height: auto;
+		min-height: 50px;
+		padding: 8px 5px;
+	}
+
+	#toptext span {
+		font-size: 9px;
+		margin: 3px 2px;
+	}
+
+	#toptext span#loginButton {
+		display: inline-block !important;
+		padding: 5px 10px;
+		font-size: 10px;
+	}
+
 	#header a.logo img {
 		max-width: 160px;
 	}
