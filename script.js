@@ -24,21 +24,31 @@ $(document).ready(function() {
         }
     });
 
-    $("#loginButton").click(() => {
-        // Show the login form as a popup
-        $("#overlayLogin").show();
-        $("#loginPopup").show();
+    $("#loginButton").click((e) => {
+        // Only show popup if not clicking on the popup itself
+        if (!$(e.target).closest('#loginPopup').length) {
+            // Show the login form as a popup
+            $("#overlayLogin").show();
+            $("#loginPopup").show();
+        }
     });
 
-    $("#closePopup").click(() => {
-        $("#overlay").hide();
+    $("#closePopup").click((e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        $("#overlayLogin").hide();
         $("#loginPopup").hide();
     });
 
     $("#overlayLogin").click(() => {
         $("#overlayLogin").hide();
         $("#loginPopup").hide();
-    })
+    });
+
+    // Prevent clicks on the popup from bubbling to overlay or loginButton
+    $("#loginPopup").click((e) => {
+        e.stopPropagation();
+    });
 
     $("#loginForm").submit(function(event) {
         event.preventDefault();

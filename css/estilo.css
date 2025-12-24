@@ -15,12 +15,30 @@ h1.extraspace{
 #toptext{
 	color:#ccc;
 	height:70px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 15px;
 }
 #toptext span{
 	display:inline-block;
-	margin-top:16px;
-	margin-left:10px;
+	margin-left:15px;
 	font-size:13px;
+}
+
+#toptext span#loginButton {
+	background: #530006;
+	color: #fff;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: 500;
+	border: none;
+	transition: background 0.3s ease;
+}
+
+#toptext span#loginButton:hover {
+	background: #6a0006;
 }
 #header a.logo{
 	margin-top: 6px;
@@ -182,20 +200,23 @@ p.nota{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+    z-index: 1000;
 }
 
 #loginPopup {
     display: none;
     position: fixed;
+    top: 70px;
+    right: 15px;
+    width: 350px;
     background-color: #fff;
     padding: 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    z-index: 2;
+    z-index: 1001;
 }
 
 #loginPopup form{
-	padding: 10px;
+	padding: 25px 20px;
 	border-top: 10px solid #d7a115;
 }
 
@@ -207,25 +228,41 @@ p.nota{
 	border-radius: 10px;
 	display: block;
 	font-size: 16px;
-	padding: 5px 0;
+	padding: 12px 0;
     background: #d7a115;
     color: #fff;
     width: 100%;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
 }
 
 #loginPopup form input{
 	border-radius: 10px;
 	font-size: 16px;
+	padding: 10px 12px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 #loginPopup #closePopup {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: -15px;
+    right: -15px;
     cursor: pointer;
-	color: #000;
+	color: #fff;
     font-weight: bolder;
-    margin: 5px;
+    background: #530006;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 1;
+    z-index: 1002;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 #loginPopup #errorMessage {
@@ -501,41 +538,43 @@ p.nota{
 	}
 
 	#toptext {
-		font-size: 11px;
 		height: auto;
-		min-height: 60px;
-		padding: 5px 10px;
+		min-height: 50px;
+		padding: 8px 10px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex-wrap: nowrap;
 	}
 
 	#toptext span {
-		display: inline-block;
-		margin-top: 5px;
-		margin-bottom: 5px;
-		margin-left: 3px;
-		margin-right: 3px;
-		font-size: 10px;
+		font-size: 11px;
+		margin-left: 8px;
 		white-space: nowrap;
 	}
 
 	#toptext span#loginButton {
-		display: inline-block !important;
 		background: #530006;
 		color: #fff !important;
 		padding: 6px 12px;
-		border-radius: 3px;
-		cursor: pointer;
+		border-radius: 4px;
 		font-size: 11px;
-		font-weight: bold;
-		border: 1px solid #d7a115;
-	}
-
-	#toptext span#loginButton:hover {
-		background: #6a0006;
+		font-weight: 500;
+		border: none;
 	}
 
 	#toptext span a {
 		color: #ccc;
 		text-decoration: none;
+	}
+
+	/* Login popup close button - larger touch target for mobile */
+	#loginPopup #closePopup {
+		width: 50px;
+		height: 50px;
+		font-size: 28px;
+		top: -20px;
+		right: -20px;
 	}
 
 	#header a.logo img {
@@ -737,17 +776,16 @@ p.nota{
 @media (max-width: 480px) {
 	#toptext {
 		height: auto;
-		min-height: 50px;
-		padding: 8px 5px;
+		min-height: 45px;
+		padding: 6px 5px;
 	}
 
 	#toptext span {
-		font-size: 9px;
-		margin: 3px 2px;
+		font-size: 10px;
+		margin-left: 5px;
 	}
 
 	#toptext span#loginButton {
-		display: inline-block !important;
 		padding: 5px 10px;
 		font-size: 10px;
 	}
