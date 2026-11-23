@@ -65,20 +65,12 @@ require_once('header.php') ?>
 						<p class="nota">This "SKY NEWS" broadcast is an educational and informational service. Rolls Capital Advisors LTD has no relation to "SKY NEWS" or any of "their companies". This video is shown for educational and informative purposes only for people who visit our website. We will update it regularly with different broadcasts to help our clients have access to financial and global news.</p>
 					</div>
 					<div class="row">
-						<div class="col-md-6">
-							<iframe frameborder="0" scrolling="no" height="400" width="300" allowtransparency="true" marginwidth="0" marginheight="0" src="http://tools.investing.com/market_quotes.php?tabs=2,1,3,4&tab_1=1,2,3,5,6,7,9,11,13,39&tab_2=27,166,167,170,172,174,176,177,179,40830&tab_3=8830,8831,8832,8833,8834,8836,8848,8849,8860,8862&tab_4=8880,8907,8900,8899,8886,8895,8905,8906,8986,13917&select_color=000000&default_color=0059b0"></iframe>
-						</div>
-						<div class="col-md-6">
-							<iframe frameborder="0" scrolling="no" height="400" width="379" allowtransparency="true" marginwidth="0" marginheight="0" src="http://eqrates.investing.com/index.php?pairs_ids=277;347;6369;6408;474;243;282;284;260;7888;8082;267;287;252;334;295;&header-text-color=%23FFFFFF&curr-name-color=%230059b0&inner-text-color=%23000000&green-text-color=%232A8215&green-background=%23B7F4C2&red-text-color=%23DC0001&red-background=%23FFE2E2&inner-border-color=%23CBCBCB&border-color=%23cbcbcb&bg1=%23F6F6F6&bg2=%23ffffff&open=hide&high=hide&low=hide&last_update=hide"></iframe>
-						</div>
+						<h2>PARTNER &amp; CORPORATE SCAN</h2>
+						<a href="https://rollscapital.netlify.app" target="_blank" rel="noopener"><img src="img/corporate-scan.jpg" alt="Partner &amp; Corporate Scan preview" style="width:100%;max-width:480px;height:auto;"></a>
+						<p class="text-right readmore"><a href="https://rollscapital.netlify.app" target="_blank" rel="noopener">Open the app...</a></p>
 					</div>
 				</div>
 				<div class="col-sm-5">
-					<div class="row">
-						<h2>PARTNER &amp; CORPORATE SCAN</h2>
-						<a href="https://rollscapital.netlify.app" target="_blank" rel="noopener"><img src="img/corporate-scan.jpg" alt="Partner &amp; Corporate Scan preview" style="width:100%;height:auto;"></a>
-						<p class="text-right readmore"><a href="https://rollscapital.netlify.app" target="_blank" rel="noopener">Open the app...</a></p>
-					</div>
 					<div class="row">
 						<h2>Our Products & Services</h2>
 						<p>Our qualified, independent advisors will assess your personal financial situation and advise you on how to find the product best-suited to your individual needs in order to achieve your objectives. Furthermore, we will guide you on how to manage and protect your wealth and maximise its growth potential in an ever-changing economic environment. We also provide our clients with complete confidentiality and asset protection, so you know you’re in safe hands when using our services.</p>
