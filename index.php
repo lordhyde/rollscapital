@@ -75,6 +75,11 @@ require_once('header.php') ?>
 				</div>
 				<div class="col-sm-5">
 					<div class="row">
+						<h2>PARTNER &amp; CORPORATE SCAN</h2>
+						<a href="https://rollscapital.netlify.app" target="_blank" rel="noopener"><img src="img/corporate-scan.jpg" alt="Partner &amp; Corporate Scan preview" style="width:100%;height:auto;"></a>
+						<p class="text-right readmore"><a href="https://rollscapital.netlify.app" target="_blank" rel="noopener">Open the app...</a></p>
+					</div>
+					<div class="row">
 						<h2>Our Products & Services</h2>
 						<p>Our qualified, independent advisors will assess your personal financial situation and advise you on how to find the product best-suited to your individual needs in order to achieve your objectives. Furthermore, we will guide you on how to manage and protect your wealth and maximise its growth potential in an ever-changing economic environment. We also provide our clients with complete confidentiality and asset protection, so you know you’re in safe hands when using our services.</p>
 						<p class="text-right readmore"><a href="products">Continue Reading...</a></p>
