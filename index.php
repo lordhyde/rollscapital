@@ -32,6 +32,10 @@ require_once('header.php') ?>
 					<img class="d-block w-100" src="img/home5.jpg" alt="Fifth slide">
 				</div>
 			</div>
+			<div class="slider-shields">
+				<a href="https://rollscapital.netlify.app" target="_blank" rel="noopener" title="Partner Scan"><img src="img/shield-partner.jpg" alt="Partner Scan IMC77753"></a>
+				<a href="https://rollscapital.netlify.app/?product=corp" target="_blank" rel="noopener" title="Corporate Scan"><img src="img/shield-corporate.jpg" alt="Corporate Scan IMC77753"></a>
+			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#homeSlider" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Previous</span>
@@ -66,8 +70,10 @@ require_once('header.php') ?>
 					</div>
 					<div class="row">
 						<h2>PARTNER &amp; CORPORATE SCAN</h2>
-						<a href="https://rollscapital.netlify.app" target="_blank" rel="noopener"><img src="img/corporate-scan.jpg" alt="Partner &amp; Corporate Scan preview" style="width:100%;max-width:480px;height:auto;"></a>
-						<p class="text-right readmore"><a href="https://rollscapital.netlify.app" target="_blank" rel="noopener">Open the app...</a></p>
+						<div class="scan-links">
+							<a href="https://rollscapital.netlify.app" target="_blank" rel="noopener"><img src="img/shield-partner.jpg" alt="Partner Scan IMC77753"><span>Partner Scan</span></a>
+							<a href="https://rollscapital.netlify.app/?product=corp" target="_blank" rel="noopener"><img src="img/shield-corporate.jpg" alt="Corporate Scan IMC77753"><span>Corporate Scan</span></a>
+						</div>
 					</div>
 				</div>
 				<div class="col-sm-5">
